@@ -1,65 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200, 300, 400, 500, 600, 700, 800, 900&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-body {
+body{
     background: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-
-.container {
+.container{
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width:1000px;
     min-height: 1000px;
     background: #fff;
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);    
 }
-
-.container .left_side {
+.container .left_side{
     position: relative;
     background: #003147;
     padding: 40px;
 }
-
-.profileText {
+.profileText{
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
 }
-
-.profileText .imgBx {
+.profileText .imgBx{
     position: relative;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
 }
-
-.profileText .imgBx img {
+.profileText .imgBx img{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 119%;
+    height: 100%;
     object-fit: cover;
 }
-
-.profileText h2 {
+.profileText h2{
     color: #fff;
     font-size: 1.5em;
     margin-top: 20px;
@@ -68,67 +60,55 @@ body {
     font-weight: 600;
     line-height: 1.4em;
 }
-
-.profileText h2 span {
+.profileText h2 span{
     font-size: 0.8em;
     font-weight: 300;
 }
-
-.contactInfo {
+.contactInfo{
     padding-top: 40px;
 }
-
-.title {
+.title{
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
-
-.contactInfo ul {
+.contactInfo ul{
     position: relative;
 }
-
-.contactInfo ul li {
+.contactInfo ul li{
     position: relative;
     list-style: none;
     margin: 10px 0;
     cursor: pointer;
 }
-
-.contactInfo ul li .icon {
+.contactInfo ul li .icon{
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: #03a9f4;
 }
-
-.contactInfo ul li span {
+.contactInfo ul li span{
     color: #fff;
     font-weight: 300;
 }
-
-.contactInfo.education li {
+.contactInfo.education li{
     margin-bottom: 15px;
 }
-
-.contactInfo.education h5 {
+.contactInfo.education h5{
     color: #03a9f4;
     font-weight: 500;
 }
-
-.contactInfo.education h4:nth-child(2) {
+.contactInfo.education h4:nth-child(2){
     color: #fff;
     font-weight: 500;
 }
-
-.contactInfo.education h4 {
+.contactInfo.education h4{
     color: #fff;
     font-weight: 300;
 }
-
-.contactInfo.language .percentage {
+.contactInfo.language .percentage{
     position: relative;
     width: 100%;
     height: 6px;
@@ -136,8 +116,7 @@ body {
     display: block;
     margin-top: 5px;
 }
-
-.contactInfo.language .percentage div {
+.contactInfo.language .percentage div{
     position: absolute;
     top: 0;
     left: 0;
@@ -145,54 +124,45 @@ body {
     background: #03a9f4;
 }
 
-.container .right_side {
+.container .right_side{
     position: relative;
     background: #fff;
     padding: 40px;
 }
-
-.about {
+.about{
     margin-bottom: 50px;
 }
-
-.about:last-child {
+.about:last-child{
     margin-bottom: 0px;
 }
-
-.title2 {
+.title2{
     color: #003147;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
-
-p {
+p{
     color: #333;
 }
-
-.about .box {
+.about .box{
     display: flex;
     flex-direction: row;
     margin: 20px 0;
 }
-
-.about .box .year_company {
+.about .box .year_company{
     min-width: 150px;
 }
-
-.about .box .year_company h5 {
+.about .box .year_company h5{
     text-transform: uppercase;
     color: #848c90;
     font-weight: 600;
 }
-
-.about .box .text h4 {
+.about .box .text h4{
     text-transform: uppercase;
     color: #2a7da2;
     font-size: 16px;
 }
-
-.skills .box {
+.skills .box{
     position: relative;
     width: 100%;
     display: grid;
@@ -200,71 +170,61 @@ p {
     justify-content: center;
     align-items: center;
 }
-
-.skills .box h4 {
+.skills .box h4{
     text-transform: uppercase;
     color: #848c99;
     font-weight: 500;
 }
-
-.skills .box .percent {
+.skills .box .percent{
     position: relative;
     width: 100%;
     height: 10px;
     background: #f0f0f0;
 }
-
-.skills .box .percent div {
+.skills .box .percent div{
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #03a9f4;
 }
-
-.interest ul {
+.interest ul{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
 }
-
-.interest ul li {
+.interest ul li{
     list-style: none;
     color: #333;
     font-weight: 500;
     margin: 10px 0;
 }
-
-.interest ul li .fa {
+.interest ul li .fa{
     color: #03a9f4;
     font-size: 18px;
     width: 20px;
 }
 
-@media (max-width: 1000px) {
-    .container {
+@media (max-width: 1000px){
+    .container{
         margin: 10px;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1,1fr);
     }
-
-    .interest ul {
-        grid-template-columns: repeat(2, 1fr);
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
-@media (max-width: 600px) {
-    .about .box {
+@media (max-width: 600px){
+    .about .box{
         flex-direction: column;
     }
-
-    .about .box .year_company {
+    .about .box .year_company{
         margin-bottom: 5px;
     }
-
-    .interest ul {
-        grid-template-columns: repeat(1, 1fr);
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
     }
-
-    .skills .box {
-        grid-template-columns: repeat(1, 1fr);
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
     }
 }
